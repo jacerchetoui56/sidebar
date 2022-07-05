@@ -29,6 +29,8 @@ function AppProvider({ children }) {
     )
 }
 
+
+// ! make sure a name it as follow ==> use[blabla] because you can't call a hook in a regular function
 export const useAppContext = () => {
     return useContext(appContext)
 }
