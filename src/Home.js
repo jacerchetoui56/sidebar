@@ -1,10 +1,10 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { FaBars } from 'react-icons/fa'
-import { appContext } from './Context'
+import { useAppContext } from './Context'
 
 export default function Home() {
-    const { isSidebarOpen, toggleSidebar } = useContext(appContext)
-    const { isModalOpen, toggleModal } = useContext(appContext)
+
+    const { toggleModal, toggleSidebar } = useAppContext()
 
     return (
         <main>

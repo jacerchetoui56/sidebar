@@ -1,11 +1,11 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { FaTimes } from 'react-icons/fa'
 import { links, social } from './data'
 import logo from './logo.svg'
-import { appContext } from './Context'
+import { useAppContext } from './Context'
 
 export default function Sidebar() {
-    const { isSidebarOpen, toggleSidebar } = useContext(appContext)
+    const { isSidebarOpen, toggleSidebar } = useAppContext()
 
     return (
         <aside className={`sidebar ${isSidebarOpen && 'show-sidebar'}`}>

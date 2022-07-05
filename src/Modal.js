@@ -1,10 +1,10 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { FaTimes } from 'react-icons/fa'
-import { appContext } from './Context'
+import { useAppContext } from './Context'
 
 
 export default function Modal() {
-    const { isModalOpen, toggleModal } = useContext(appContext)
+    const { isModalOpen, toggleModal } = useAppContext()
     return (
         <div className={`modal-overlay ${isModalOpen && 'show-modal'}`}>
             <div className="modal-container">

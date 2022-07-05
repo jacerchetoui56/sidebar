@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 
 
 const appContext = React.createContext()
@@ -27,6 +27,10 @@ function AppProvider({ children }) {
             {children}
         </appContext.Provider>
     )
+}
+
+export const useAppContext = () => {
+    return useContext(appContext)
 }
 
 
