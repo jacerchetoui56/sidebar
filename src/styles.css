@@ -164,7 +164,7 @@ main {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
   100% {
     transform: scale(1);
@@ -206,6 +206,7 @@ main {
   display: grid;
   place-items: center;
   transition: var(--transition);
+  backdrop-filter: blur(2px);
   visibility: hidden;
   z-index: -1;
 }
@@ -232,7 +233,7 @@ main {
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
-  color: var(--clr-red-dark);
+  color: var(--clr-grey-5);
   cursor: pointer;
 }
 
@@ -254,11 +255,11 @@ main {
   color: var(--clr-primary-5);
   transition: var(--transition);
   cursor: pointer;
-  color: var(--clr-red-dark);
+  color: var(--clr-grey-5);
   margin-top: 0.2rem;
 }
 .close-btn:hover {
-  color: var(--clr-red-light);
+  color: var(--clr-red-dark);
 }
 .logo {
   justify-self: center;
